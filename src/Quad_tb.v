@@ -7,7 +7,7 @@
 module Quad_tb();
 
 //-- Simulation time: 1us (10 * 100ns)
-parameter DURATION = 10;
+parameter DURATION = 35;
 
 //-- Clock signal. It is not used in this simulation
 reg clk = 0;
@@ -16,7 +16,7 @@ always #0.5 clk = ~clk;
 
 //-- Counter bits length
 reg A, B;
-wire [7:0] counter;
+wire [31:0] counter;
 
 initial begin
   B = 1'b1;
